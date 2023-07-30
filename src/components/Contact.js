@@ -17,7 +17,7 @@ function Contact() {
       const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-          const response = await fetch("/.netlify/functions/ContactLogic.js", {
+          const response = await fetch("/.netlify/functions/ContactLogic", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
