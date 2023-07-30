@@ -5,7 +5,7 @@ function TechnologiesTypewriter() {
     return (
 
         <TypeIt 
-            className="text-transparent bg-clip-text text-black"
+            className="bg-clip-text text-black"
             options={{ loop: true, cursor: true }}
             speed="10"
             getBeforeInit={(instance) => {
