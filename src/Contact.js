@@ -6,7 +6,7 @@ function Contact() {
     <section className="bg-gray-100 py-12">
       <div className="max-w-md mx-auto bg-white p-8 shadow-md rounded-md">
         <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
-          <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" data-netlify-success="/success" onSubmit={handleSubmit}>
+          <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" data-netlify-success="/success">
           <input type="hidden" name="form-name" value="contact" />
           <div className="mb-4">
             <label htmlFor="name" className="block text-gray-800 font-medium mb-2">
