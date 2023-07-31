@@ -20,6 +20,33 @@ code {
     monospace;
 }
 
+.custom-button {
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: #2563eb;
+}
+
+.download-icon {
+  transition: transform 0.2s;
+  transform: rotate(270deg)
+}
+
+.custom-button:hover .download-icon {
+  transform: rotate(360deg);
+}
+
 .purple-background {
   background: linear-gradient(76deg, rgba(208,145,201,1) 0%, rgba(102,94,102,1) 100%);
 }

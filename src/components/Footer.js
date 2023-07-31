@@ -5,13 +5,13 @@ function Footer() {
     return (
       <footer className="bg-gradient-to-br from-gray-800 to-gray-900 text-white py-8">
         <div className="container mx-auto flex justify-center mb-4">
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/cristian-pc/" target="_blank" rel="noopener noreferrer">
             <FiLinkedin className="text-4xl mx-4" />
           </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/crisiiiwis/" target="_blank" rel="noopener noreferrer">
             <FiInstagram className="text-4xl mx-4" />
           </a>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Dookietrukie" target="_blank" rel="noopener noreferrer">
             <FiGithub className="text-4xl mx-4" />
           </a>
         </div>

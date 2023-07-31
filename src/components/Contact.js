@@ -1,11 +1,12 @@
 import React from "react";
+import { FiSend } from "react-icons/fi";
 
 function Contact() {
 
   return (
     <section className="bg-gray-100 py-12">
       <div className="max-w-md mx-auto bg-white p-8 shadow-md rounded-md">
-        <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
+        <h2 className="text-4xl font-bold mb-4 text-center">Contact Me 📨</h2>
           <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" data-netlify-success="/success">
           <input type="hidden" name="form-name" value="contact" />
           <div className="mb-4">
@@ -44,13 +45,14 @@ function Contact() {
               required
             />
           </div>
-          <div className="text-center">
-            <button
-              type="submit"
-              className="bg-blue-600 text-white font-bold px-6 py-3 rounded-md hover:bg-blue-700 transition-colors"
-            >
-              Send Message
-            </button>
+          <div className="flex justify-center">
+          <button
+  type="submit"
+  className="bg-blue-600 text-white font-bold px-6 py-3 rounded-md hover:bg-blue-700 transition-colors flex items-center"
+>
+  <FiSend className="mr-2" />
+  Send Message
+</button>
           </div>
         </form>
       </div>

@@ -5,6 +5,15 @@ import TechnologiesTypewriter from "./TechnologiesTypewriter";
 
 function About() {
 
+  const handleDownload = () => {
+    // Replace 'YOUR_PDF_URL' with the actual URL of your PDF file
+    const pdfUrl = 'https://drive.google.com/uc?export=download&id=1u-aSvoB1zEB3XSgD7GxzJBl_2wNbfHan';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'CVCristianPalao.pdf';
+    link.click();
+  };
+
   return (
     <section className="py-12 bg-gray-100">
       <div className="container mx-auto px-4">
@@ -12,13 +21,14 @@ function About() {
           {/* About Me */}
           <div>
             <h2 className="text-3xl font-bold mb-4 text-center">About Me</h2>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-gray-700 text-center">
             Hey there! I'm Cris, a passionate Full Stack Web Developer. I believe in creating <strong>user-friendly and innovative web applications</strong> that make a positive impact on people's lives.
             </p>
             {/* The button to download your curriculum (You can add the download functionality later) */}
-            <div className="mt-6">
-            <button className="bg-blue-600 text-white font-bold px-4 py-2 rounded flex items-center">
-                Take a look at my CV! <FiDownload className="ml-2" />
+            <div className="mt-6 flex justify-center">
+              <button className="custom-button" onClick={handleDownload}>
+                <span>Download Curriculum</span>
+                <FiDownload className="download-icon" size={20} />
               </button>
             </div>
           </div>
