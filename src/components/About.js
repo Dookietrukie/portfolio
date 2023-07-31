@@ -15,7 +15,7 @@ function About() {
   };
 
   return (
-    <section className="py-12 bg-gray-100">
+    <section id="about-section" className="py-12 bg-gray-100">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center justify-center">
           {/* About Me */}

@@ -20,6 +20,27 @@ code {
     monospace;
 }
 
+.link-arrow {
+  display: inline-block;
+  background-color: rgba(102,94,102,0);
+  border-color: 1px solid white;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.link-arrow:hover {
+  background-color: #1e40af;
+}
+
+.arrow-icon {
+  margin-left: 8px;
+  transition: transform 0.3s;
+}
+
 .custom-button {
   background-color: #3b82f6;
   color: #ffffff;
