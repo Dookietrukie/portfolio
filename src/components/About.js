@@ -2,11 +2,12 @@ import React from "react";
 import { FiDownload } from 'react-icons/fi';
 import { IoFlashOutline, IoPhonePortraitOutline, IoStarOutline, IoShieldOutline, IoTrendingUpOutline, IoPeopleOutline } from 'react-icons/io5'; 
 import TechnologiesTypewriter from "./TechnologiesTypewriter";
+import Logo from '../assets/CrisDevLogo.png';
 
 function About() {
 
+  // function to handle the download of my CV
   const handleDownload = () => {
-    // Replace 'YOUR_PDF_URL' with the actual URL of your PDF file
     const pdfUrl = 'https://drive.google.com/uc?export=download&id=1u-aSvoB1zEB3XSgD7GxzJBl_2wNbfHan';
     const link = document.createElement('a');
     link.href = pdfUrl;
@@ -24,8 +25,10 @@ function About() {
             <p className="text-lg text-gray-700 text-center">
             Hey there! I'm Cris, a passionate Full Stack Web Developer. I believe in creating <strong>user-friendly and innovative web applications</strong> that make a positive impact on people's lives.
             </p>
-            {/* The button to download your curriculum (You can add the download functionality later) */}
-            <div className="mt-6 flex justify-center">
+            <div className="mt-6 mb-6 flex justify-center">
+              <img src={Logo} alt="Cris Dev Logo" />
+            </div>
+            <div className="mt-10 flex justify-center">
               <button className="custom-button" onClick={handleDownload}>
                 <span>Download Curriculum</span>
                 <FiDownload className="download-icon" size={20} />
@@ -33,7 +36,6 @@ function About() {
             </div>
           </div>
 
-          {/* Key Points about My Code */}
           <div>
             <h3 className="text-3xl font-bold text-center mb-6">My code is...</h3>
             <div className="grid grid-cols-2 gap-8">
@@ -77,7 +79,6 @@ function About() {
           </div>
         </div>
 
-        {/* Knowledge in Different Technologies */}
         <div className="mt-12 text-center">
           <h3 className="text-3xl font-bold mb-6">
           What I know about different&nbsp;
@@ -85,12 +86,7 @@ function About() {
             <TechnologiesTypewriter />
           </span>
           </h3>
-          <p className="text-lg text-gray-700">
-            {/* Your text about your knowledge in different technologies */}
-          </p>
-          {/* The bars representing your knowledge */}
           <div className="grid grid-cols-2 gap-4">
-            {/* JavaScript Knowledge */}
             <div>
               <p className="text-lg font-bold mb-2">JavaScript</p>
               <div className="bg-gray-300 rounded-lg h-6 relative">
@@ -100,7 +96,6 @@ function About() {
                 </span>
               </div>
             </div>
-            {/* React Knowledge */}
             <div>
               <p className="text-lg font-bold mb-2">React</p>
               <div className="bg-gray-300 rounded-lg h-6 relative">
