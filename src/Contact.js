@@ -1,17 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Contact() {
-
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here (e.g., send data to a server, API, etc.)
-
-    // Show success message and clear the form
-    setSubmitted(true);
-    e.target.reset();
-  };
 
   return (
     <section className="bg-gray-100 py-12">
