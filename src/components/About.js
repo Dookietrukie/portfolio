@@ -40,37 +40,37 @@ function About() {
               <div className="flex flex-col items-center justify-center md:justify-start">
                 <IoFlashOutline className="text-blue-600 text-4xl mb-4" />
                 <p className="text-lg text-center">
-                  <strong>Fast:</strong> I build blazing-fast web experiences for you.
+                  <strong>Fast:<br /></strong> I build blazing-fast web experiences for you.
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center md:justify-start">
                 <IoPhonePortraitOutline className="text-blue-600 text-4xl mb-4" />
                 <p className="text-lg text-center">
-                  <strong>Responsive:</strong> My designs fit perfectly on any device.
+                  <strong>Responsive:<br /></strong> My designs fit perfectly on any device.
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center md:justify-start">
                 <IoStarOutline className="text-blue-600 text-4xl mb-4" />
                 <p className="text-lg text-center">
-                  <strong>Elegant:</strong> I strive for elegance in my code and design.
+                  <strong>Elegant:<br /></strong> I strive for elegance in my code and design.
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center md:justify-start">
                 <IoShieldOutline className="text-blue-600 text-4xl mb-4" />
                 <p className="text-lg text-center">
-                  <strong>Secure:</strong> Your safety is my top priority.
+                  <strong>Secure:<br /></strong> Your safety is my top priority.
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center md:justify-start">
                 <IoTrendingUpOutline className="text-blue-600 text-4xl mb-4" />
                 <p className="text-lg text-center">
-                  <strong>Scalable:</strong> My projects grow with your needs.
+                  <strong>Scalable:<br /></strong> My projects grow with your needs.
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center md:justify-start">
                 <IoPeopleOutline className="text-blue-600 text-4xl mb-4" />
                 <p className="text-lg text-center">
-                  <strong>Accessible:</strong> Inclusivity matters - my apps are for everyone.
+                  <strong>Accessible:<br /></strong> Inclusivity matters - my apps are for everyone.
                 </p>
               </div>
             </div>
