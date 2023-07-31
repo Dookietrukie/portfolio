@@ -29,6 +29,24 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" data-netlify-success="/success">
+      <input type="hidden" name="form-name" value="contact" />
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <div>
+        <button type="submit">Send Message</button>
+      </div>
+    </form>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
