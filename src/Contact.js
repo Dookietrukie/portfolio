@@ -17,7 +17,6 @@ function Contact() {
     <section className="bg-gray-100 py-12">
       <div className="max-w-md mx-auto bg-white p-8 shadow-md rounded-md">
         <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
-        {!submitted ? (
           <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" data-netlify-success="/success" onSubmit={handleSubmit}>
           <input type="hidden" name="form-name" value="contact" />
           <div className="mb-4">
@@ -65,9 +64,6 @@ function Contact() {
             </button>
           </div>
         </form>
-        ) : (
-          <p className="text-center text-green-600 font-bold">Form submitted successfully!</p>
-        )}
       </div>
     </section>
   );
